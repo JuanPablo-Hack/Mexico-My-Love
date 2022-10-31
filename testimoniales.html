@@ -144,7 +144,7 @@
                   </ul>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active">
+                    <li class="rd-nav-item">
                       <a class="rd-nav-link" href="index.html">Acerca de</a>
                     </li>
                     <li class="rd-nav-item">
@@ -153,7 +153,7 @@
                     <li class="rd-nav-item">
                       <a class="rd-nav-link" href="destinos.html">Destinos</a>
                     </li>
-                    <li class="rd-nav-item">
+                    <li class="rd-nav-item active">
                       <a class="rd-nav-link" href="testimoniales.html"
                         >Testimoniales</a
                       >
@@ -173,8 +173,7 @@
           </nav>
         </div>
       </header>
-      <!-- TODO: debemos de poner los testimoniales de manera que cada destino muestre sus información -->
-      <!-- Swiper-->
+
       <section class="breadcrumbs-custom-inset">
         <div class="breadcrumbs-custom context-dark bg-overlay-60">
           <div class="container">
@@ -186,10 +185,176 @@
           ></div>
         </div>
       </section>
-      <!-- TODO: Cambiarlo a modo de carrussel -->
-      <section class="section section-sm section-last bg-default">
+      <section class="section section-sm section-fluid bg-default">
+        <!-- Owl Carousel-->
+        <div
+          class="owl-carousel owl-classic owl-timeline"
+          data-items="1"
+          data-md-items="2"
+          data-lg-items="3"
+          data-xl-items="4"
+          data-margin="30"
+          data-autoplay="false"
+          data-nav="true"
+          data-dots="true"
+        >
+          <div class="owl-item">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure">
+                <img
+                  src="images/oaxaca_destinos.jpg"
+                  alt=""
+                  width="420px"
+                  height="250px"
+                />
+              </div>
+              <div class="thumbnail-mary-caption">
+                <a
+                  class="icon fl-bigmug-line-zoom60"
+                  href="images/oaxaca_destinos.jpg"
+                  data-lightgallery="item"
+                  ><img
+                    src="images/oaxaca_destinos.jpg"
+                    alt=""
+                    width="420px"
+                    height="250px"
+                /></a>
+              </div>
+            </article>
+            <div class="thumbnail-mary-description">
+              <h5 class="thumbnail-mary-project">
+                <button
+                  class="button button-lg button-primary button-ujarak"
+                  onclick="mostrar_testimonial(1)"
+                >
+                  Oaxaca
+                </button>
+              </h5>
+              <span class="thumbnail-mary-decor"></span>
+              <h5 class="thumbnail-mary-time"></h5>
+            </div>
+          </div>
+          <div class="owl-item">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure">
+                <img
+                  src="images/chiapas_destinos.jpg"
+                  alt=""
+                  width="420px"
+                  height="250px"
+                />
+              </div>
+              <div class="thumbnail-mary-caption">
+                <a
+                  class="icon fl-bigmug-line-zoom60"
+                  href="images/chiapas_destinos.jpg"
+                  data-lightgallery="item"
+                  ><img
+                    src="images/chiapas_destinos.jpg"
+                    alt=""
+                    width="420px"
+                    height="250px"
+                /></a>
+              </div>
+            </article>
+            <div class="thumbnail-mary-description">
+              <h5 class="thumbnail-mary-project">
+                <button
+                  class="button button-lg button-primary button-ujarak"
+                  onclick="mostrar_testimonial(1)"
+                >
+                  Chiapas
+                </button>
+              </h5>
+              <span class="thumbnail-mary-decor"></span>
+              <h5 class="thumbnail-mary-time"></h5>
+            </div>
+          </div>
+          <div class="owl-item">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure">
+                <img
+                  src="images/yucatan_destinos.jpg"
+                  alt=""
+                  width="420px"
+                  height="250px"
+                />
+              </div>
+              <div class="thumbnail-mary-caption">
+                <a
+                  class="icon fl-bigmug-line-zoom60"
+                  href="images/yucatan_destinos.jpg"
+                  data-lightgallery="item"
+                  ><img
+                    src="images/yucatan_destinos.jpg"
+                    alt=""
+                    width="420px"
+                    height="250px"
+                /></a>
+              </div>
+            </article>
+            <div class="thumbnail-mary-description">
+              <h5 class="thumbnail-mary-project">
+                <button
+                  class="button button-lg button-primary button-ujarak"
+                  onclick="mostrar_testimonial(1)"
+                >
+                  Yucatán
+                </button>
+              </h5>
+              <span class="thumbnail-mary-decor"></span>
+              <h5 class="thumbnail-mary-time"></h5>
+            </div>
+          </div>
+          <div class="owl-item">
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure">
+                <img
+                  src="images/centro-campeche.jpg"
+                  alt=""
+                  width="420px"
+                  height="250px"
+                />
+              </div>
+              <div class="thumbnail-mary-caption">
+                <a
+                  class="icon fl-bigmug-line-zoom60"
+                  href="images/centro-campeche.jpg"
+                  data-lightgallery="item"
+                  ><img
+                    src="images/centro-campeche.jpg"
+                    alt=""
+                    width="420px"
+                    height="250px"
+                /></a>
+              </div>
+            </article>
+            <div class="thumbnail-mary-description">
+              <h5 class="thumbnail-mary-project">
+                <button
+                  class="button button-lg button-primary button-ujarak"
+                  onclick="mostrar_testimonial(1)"
+                >
+                  Campeche
+                </button>
+              </h5>
+              <span class="thumbnail-mary-decor"></span>
+              <h5 class="thumbnail-mary-time"></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section-sm section-last bg-default"
+        id="Testimoniales_Oaxaca"
+        style="display: none"
+      >
         <div class="container">
-          <h3>Que dice la gente?</h3>
+          <h3>Que dice la gente de Oaxaca?</h3>
           <div
             class="owl-carousel owl-modern"
             data-items="1"
@@ -277,8 +442,6 @@
           </div>
         </div>
       </section>
-
-      <!-- TODO: Hacer el apartado de Alianzas -->
 
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
@@ -391,5 +554,15 @@
     <!-- Javascript-->
     <script src="../../js/core.min.js"></script>
     <script src="../../js/script.js"></script>
+    <script>
+      function mostrar_testimonial(estado) {
+        switch (estado) {
+          case 1:
+            document.getElementById("Testimoniales_Oaxaca").style.display =
+              "inherit";
+            break;
+        }
+      }
+    </script>
   </body>
 </html>

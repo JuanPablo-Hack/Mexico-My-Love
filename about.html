@@ -34,6 +34,88 @@
       html.lt-ie-10 .ie-panel {
         display: block;
       }
+      @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700");
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Condensed", sans-serif !important;
+      }
+
+      .box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: #000;
+        transition: 0.5s;
+      }
+
+      .box:hover {
+        transform: translateY(-30px);
+      }
+
+      .box .imgBox {
+        position: relative;
+      }
+      .box .imgBox img {
+        transition: 0.5s;
+      }
+      .box:hover .imgBox img {
+        opacity: 0.5;
+        transform: translateY(-20px);
+      }
+      .box .content {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        opacity: 0;
+      }
+      .box:hover .content {
+        opacity: 1;
+        bottom: 0;
+      }
+      .box .content h3 {
+        font-size: 48px;
+        color: #fff;
+        font-weight: 700;
+      }
+      .box .content p {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+      }
+      .box .content .btnD {
+        border: none;
+        background: #fe1b70;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 20px;
+        font-weight: 700;
+        transition: 0.5s;
+      }
+      .box .content .btnD:hover {
+        background: #f6fe1b;
+        color: #262626;
+      }
+      @media only screen and (max-width: 700px) {
+        .box {
+          height: auto;
+          max-width: 100%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .box {
+          max-height: 300px;
+          max-width: 300px;
+          margin: 15px 0;
+        }
+      }
     </style>
   </head>
   <body>
@@ -434,170 +516,165 @@
         <div class="container">
           <h3>Nuestro Servicios</h3>
           <div class="row row-30">
-            <div class="col-sm-6 col-lg-4">
-              <article class="box-icon-classic">
-                <div
-                  class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left"
-                >
-                  <div class="unit-left">
-                    <img
-                      src="images/icons/viajar.png"
-                      style="width: 50px; height: 50px"
-                    />
-                  </div>
-                  <div class="unit-body">
-                    <h5 class="box-icon-classic-title">
-                      <a href="#">Reservación de vuelos</a>
-                    </h5>
-                    <p class="box-icon-classic-text">
-                      Nuestro exclusivo sistema de emparejamiento te permite
-                      encontrar exactamente el recorrido que quieres para tus
-                      próximas vacaciones.
-                    </p>
-                  </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/vuelos.jpg" class="img-responsive" />
                 </div>
-              </article>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Reservación de vuelos</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    cupiditate velit, ab doloremque ex nostrum provident
+                    corporis ipsum minima ut consectetur natus alias ipsa harum.
+                    Unde inventore sed voluptatibus perferendis!
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <article class="box-icon-classic">
-                <div
-                  class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left"
-                >
-                  <div class="unit-left">
-                    <img
-                      src="images/icons/transporte-publico.png"
-                      style="width: 50px; height: 50px"
-                    />
-                  </div>
-                  <div class="unit-body">
-                    <h5 class="box-icon-classic-title">
-                      <a href="#">Transporte terrestre</a>
-                    </h5>
-                    <p class="box-icon-classic-text">
-                      Ofrecemos una amplia variedad de tours elegidos
-                      personalmente con destinos en todo el mundo.
-                    </p>
-                  </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/camiones.jpg" class="img-responsive" />
                 </div>
-              </article>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Transporte terrestre</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    cupiditate velit, ab doloremque ex nostrum provident
+                    corporis ipsum minima ut consectetur natus alias ipsa harum.
+                    Unde inventore sed voluptatibus perferendis!
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <article class="box-icon-classic">
-                <div
-                  class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left"
-                >
-                  <div class="unit-left">
-                    <img
-                      src="images/icons/botones.png"
-                      style="width: 50px; height: 50px"
-                    />
-                  </div>
-                  <div class="unit-body">
-                    <h5 class="box-icon-classic-title">
-                      <a href="#">Hospedaje</a>
-                    </h5>
-                    <p class="box-icon-classic-text">
-                      Nuestros gerentes de viaje están calificados, capacitados
-                      y son amigables para brindarle el mejor servicio.
-                    </p>
-                  </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/hospedaje.jpg" class="img-responsive" />
                 </div>
-              </article>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Hospedaje</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit eius aut quaerat delectus quos aspernatur.
+                    Exercitationem sunt, incidunt, libero consequuntur nulla
+                    quasi, et minus commodi quo nam dignissimos sapiente eum?
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <article class="box-icon-classic">
-                <div
-                  class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left"
-                >
-                  <div class="unit-left">
-                    <img
-                      src="images/icons/tour-guide.png"
-                      style="width: 50px; height: 50px"
-                    />
-                  </div>
-                  <div class="unit-body">
-                    <h5 class="box-icon-classic-title">
-                      <a href="#">Tours</a>
-                    </h5>
-                    <p class="box-icon-classic-text">
-                      Siempre puede obtener apoyo profesional de nuestro
-                      personal. 24/7 y consulta cualquier duda que tengas.
-                    </p>
-                  </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/tours.jpg" class="img-responsive" />
                 </div>
-              </article>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Tours</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet voluptatibus non ut perspiciatis, modi ipsam
+                    voluptatem, est, facere et impedit deserunt assumenda quia
+                    voluptas velit ad itaque molestias asperiores provident.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <article class="box-icon-classic">
-                <div
-                  class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left"
-                >
-                  <div class="unit-left">
-                    <img
-                      src="images/icons/evento.png"
-                      style="width: 50px; height: 50px"
-                    />
-                  </div>
-                  <div class="unit-body">
-                    <h5 class="box-icon-classic-title">
-                      <a href="#">Entradas a eventos y sitio de interés</a>
-                    </h5>
-                    <p class="box-icon-classic-text">
-                      Our team offers only the best selection of affordable and
-                      luxury hotels to our clients.
-                    </p>
-                  </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/eventos.jpg" class="img-responsive" />
                 </div>
-              </article>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Entradas a eventos y sitio de interés</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium libero quibusdam consectetur dolore vel maxime!
+                    Nostrum, quibusdam officia. Quibusdam placeat voluptatum
+                    rerum corporis, ad iusto nemo nostrum at eius impedit?
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <article class="box-icon-classic">
-                <div
-                  class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left"
-                >
-                  <div class="unit-left">
-                    <img
-                      src="images/icons/promocion.png"
-                      style="width: 50px; height: 50px"
-                    />
-                  </div>
-                  <div class="unit-body">
-                    <h5 class="box-icon-classic-title">
-                      <a href="#"
-                        >Precios especiales en artesanías, gastronomía y
-                        souvenirs</a
-                      >
-                    </h5>
-                    <p class="box-icon-classic-text">
-                      If you find tours that are cheaper than ours, we will
-                      compensate the difference.
-                    </p>
-                  </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/tours.jpg" class="img-responsive" />
                 </div>
-              </article>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Precios especiales en artesanías y souvenirs</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis maiores animi dolorum doloremque aperiam sed, culpa
+                    quidem voluptatibus. Laborum doloribus officia atque
+                    explicabo dolores, non repellendus odio! Saepe, et
+                    consequatur!
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <article class="box-icon-classic">
-                <div
-                  class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left"
-                >
-                  <div class="unit-left">
-                    <img
-                      src="images/icons/promocion.png"
-                      style="width: 50px; height: 50px"
-                    />
-                  </div>
-                  <div class="unit-body">
-                    <h5 class="box-icon-classic-title">
-                      <a href="#">Soporte Médico</a>
-                    </h5>
-                    <p class="box-icon-classic-text">
-                      If you find tours that are cheaper than ours, we will
-                      compensate the difference.
-                    </p>
-                  </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/medicina.jpg" class="img-responsive" />
                 </div>
-              </article>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Soporte Médico</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet animi nobis vero reiciendis repellendus tempora
+                    corrupti, nulla aliquid suscipit rerum doloremque optio
+                    fugit perferendis asperiores. Placeat, animi eum? Quo,
+                    consequatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/comida.jpg" class="img-responsive" />
+                </div>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Gastronomía</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Nuestros gerentes de viaje están calificados, capacitados y
+                    son amigables para brindarle el mejor servicio.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-lg-4">
+              <div class="box">
+                <div class="imgBox">
+                  <img src="images/tours.jpg" class="img-responsive" />
+                </div>
+                <div class="content">
+                  <h5 class="box-icon-classic-title" style="color: #fff">
+                    <a href="#">Hospedaje</a>
+                  </h5>
+                  <p class="box-icon-classic-text">
+                    Nuestros gerentes de viaje están calificados, capacitados y
+                    son amigables para brindarle el mejor servicio.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
