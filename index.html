@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <style>
       .ie-panel {
         display: none;
@@ -33,6 +34,32 @@
       html.ie-10 .ie-panel,
       html.lt-ie-10 .ie-panel {
         display: block;
+      }
+      .demo-row {
+        background-color: #333;
+        padding: 50px 0;
+      }
+
+      /*Implement*/
+      .sponsor-feature {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+      }
+
+      #id-sponsors .carousel {
+        margin-bottom: 20px;
+      }
+      #id-sponsors .item {
+        padding-bottom: 20px;
+      }
+      #id-sponsors .carousel-indicators {
+        bottom: -25px;
       }
     </style>
   </head>
@@ -178,7 +205,12 @@
         <div class="breadcrumbs-custom context-dark bg-overlay-60">
           <div class="container">
             <h4>En MexicoMyLove</h4>
-            <h2 class="breadcrumbs-custom-title"><q>No corremos, nos lo tomamos con calma, para que vivas la mejor experiencia de tu vida</q></h2>
+            <h2 class="breadcrumbs-custom-title">
+              <q
+                >No corremos, nos lo tomamos con calma, para que vivas la mejor
+                experiencia de tu vida</q
+              >
+            </h2>
           </div>
           <div
             class="box-position"
@@ -258,9 +290,175 @@
           </div>
         </div>
       </section>
-
-      <!-- TODO: Hacer el apartado de Alianzas -->
-
+      <section class="section section-sm">
+        <div class="container">
+          <h3 class="title-block find-car oh">
+            <span class="d-inline-block wow slideInUp">Alianzas</span>
+          </h3>
+          <div class="row row-30 justify-content-center box-ordered">
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header">
+                  <a class="team-modern-figure" href="#"
+                    ><img
+                      class="img-circles"
+                      src="images/user-1-118x118.jpg"
+                      alt=""
+                      width="118"
+                      height="118"
+                  /></a>
+                  <svg
+                    x="0px"
+                    y="0px"
+                    width="270px"
+                    height="70px"
+                    viewbox="0 0 270 70"
+                    enable-background="new 0 0 270 70"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        fill="#161616"
+                        d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name">
+                    <a href="#">Test</a>
+                  </h6>
+                  <p class="team-modern-status">Test</p>
+                  <h6 class="team-modern-phone">
+                    <a href="tel:#">Test</a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header">
+                  <a class="team-modern-figure" href="#"
+                    ><img
+                      class="img-circles"
+                      src="images/user-2-118x118.jpg"
+                      alt=""
+                      width="118"
+                      height="118"
+                  /></a>
+                  <svg
+                    x="0px"
+                    y="0px"
+                    width="270px"
+                    height="70px"
+                    viewbox="0 0 270 70"
+                    enable-background="new 0 0 270 70"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        fill="#161616"
+                        d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name">
+                    <a href="#">Test</a>
+                  </h6>
+                  <p class="team-modern-status">Test</p>
+                  <h6 class="team-modern-phone">
+                    <a href="tel:#">Test</a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header">
+                  <a class="team-modern-figure" href="#"
+                    ><img
+                      class="img-circles"
+                      src="images/user-3-118x118.jpg"
+                      alt=""
+                      width="118"
+                      height="118"
+                  /></a>
+                  <svg
+                    x="0px"
+                    y="0px"
+                    width="270px"
+                    height="70px"
+                    viewbox="0 0 270 70"
+                    enable-background="new 0 0 270 70"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        fill="#161616"
+                        d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name">
+                    <a href="#">Test</a>
+                  </h6>
+                  <p class="team-modern-status">Test</p>
+                  <h6 class="team-modern-phone">
+                    <a href="tel:#">Test</a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-3">
+              <!-- Team Modern-->
+              <article class="team-modern">
+                <div class="team-modern-header">
+                  <a class="team-modern-figure" href="#"
+                    ><img
+                      class="img-circles"
+                      src="images/user-4-118x118.jpg"
+                      alt=""
+                      width="118"
+                      height="118"
+                  /></a>
+                  <svg
+                    x="0px"
+                    y="0px"
+                    width="270px"
+                    height="70px"
+                    viewbox="0 0 270 70"
+                    enable-background="new 0 0 270 70"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        fill="#161616"
+                        d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="team-modern-caption">
+                  <h6 class="team-modern-name">
+                    <a href="#">Test</a>
+                  </h6>
+                  <p class="team-modern-status">Test</p>
+                  <h6 class="team-modern-phone">
+                    <a href="tel:#">Test</a>
+                  </h6>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
           <div class="container">
@@ -372,5 +570,11 @@
     <!-- Javascript-->
     <script src="../../js/core.min.js"></script>
     <script src="../../js/script.js"></script>
+    <script>
+      $("#sponsor-carousel").carousel({
+        interval: 3000,
+        cycle: true,
+      });
+    </script>
   </body>
 </html>
